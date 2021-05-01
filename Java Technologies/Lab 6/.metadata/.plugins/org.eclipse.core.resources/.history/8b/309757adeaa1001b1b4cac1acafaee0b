@@ -1,9 +1,0 @@
-public class Test {
-
-	public static void main(String[] args) {
-		Queue<Integer> q = new Queue<>();
-		q.enQueue(2);
-		q.display();
-	}
-
-}

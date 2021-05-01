@@ -2,10 +2,14 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.Map;
+import java.util.Random;
 import java.util.Set;
 import java.util.TreeMap;
 
+// Person class 
 class Person implements Comparable<Person>{
 	String name;
 	int age;
@@ -43,22 +47,38 @@ class Person implements Comparable<Person>{
 public class Main{
 
 	public static void main(String[] args) {
+		// defining map 
 		Map<Person, String> m = new HashMap();
-		
-		m.put(new Person("Juzar",18), "Singing");
-		m.put(new Person("Niraj",16), "Dancing");
-		m.put(new Person("Dharmik",28), "Running");
-		Collections.sort(m, Comparator.comparing(Person::getName).thenComparingInt(Person::getAge));
-		Map<Person,String> tm = new TreeMap<>(m);	
-		//System.out.println();
-		printMap(tm);
-
+		// array of hobby
+		String hobby[] = {"Singing","Sketching","Reading"};
+		Random r = new Random();
+		Person p[] = {
+				new Person("Juzar",14),
+				new Person("Dharmik",18),
+				new Person("Niraj",21),
+				new Person("Tushar",15),
+				new Person("Bhargav",19)
+				};
+		// Sort in linked list to sort
+		LinkedList<Person> se = new LinkedList<>();
+		for(Person s1 : p) {
+			se.add(s1);
+		}
+		// Sorting
+		Collections.sort(se);
+		// initialize map
+		for(Person p1 : se) {
+			m.put(p1, hobby[r.nextInt(hobby.length)]);
+		}
+		// Output based on Sorted age of persons
+		Set<String> uniqueHobbies = new HashSet<>();
+		for(int i = 0; i < m.size(); i++) {
+			System.out.println("Name: "+se.get(i).getName()+" :Age "+se.get(i).getAge()+" "+m.get(se.get(i)));
+			uniqueHobbies.add(m.get(se.get(i)));
+		}
+		//Unique hobbies
+		System.out.println("Unique hobbies according to the stored values in map collection object:");
+		System.out.println(uniqueHobbies);
 	}
-	public static <K, V> void printMap(Map<K, V> map) {
-        for (Map.Entry<K, V> entry : map.entrySet()) {
-            System.out.println("Key : " + entry.getKey()
-                + " Value : " + entry.getValue());
-        }
-    }
 
 }
