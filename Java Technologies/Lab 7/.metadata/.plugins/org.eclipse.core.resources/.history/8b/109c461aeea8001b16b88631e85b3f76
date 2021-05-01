@@ -1,0 +1,125 @@
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+class Person implements Comparable<Person>{
+	String name;
+	int age;
+	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	@Override
+	public int compareTo(Person arg0) {
+		if(getAge() > arg0.getAge()) {
+			return 1;
+		}else if(getAge() == arg0.getAge()) {
+			return 0;
+		}else {
+			return -1;
+		}
+		
+	}
+	
+		
+}
+public class Main implements Map<Person, String>{
+
+	public static void main(String[] args) {
+		Map<Person, String> m = new HashMap();
+		
+		m.put(new Person("Juzar",18), "Singing");
+		m.put(new Person("Niraj",16), "Dancing");
+		m.put(new Person("Dharmik",28), "Running");
+		
+		System.out.println(new Person("Juzar",18));
+
+	}
+
+	@Override
+	public void clear() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean containsKey(Object arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean containsValue(Object arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Set<Entry<Person, String>> entrySet() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String get(Object arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Set<Person> keySet() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String put(Person arg0, String arg1) {
+	
+		return null;
+	}
+
+	@Override
+	public void putAll(Map<? extends Person, ? extends String> arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String remove(Object arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Collection<String> values() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

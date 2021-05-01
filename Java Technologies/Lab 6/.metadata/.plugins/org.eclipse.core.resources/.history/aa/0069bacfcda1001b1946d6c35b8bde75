@@ -1,0 +1,4 @@
+public interface MinMax<T>{
+	T findMin();
+	T findMax();
+}

@@ -1,0 +1,58 @@
+New thread : Thread[One,5,main]
+New thread : Thread[Two,5,main]
+One: 1
+Two: 1
+One: 2
+Two: 2
+One: 3
+Two: 3
+One: 4
+Two: 4
+One: 5
+Two: 5
+Suspending thread one
+Two: 6
+Two: 7
+Two: 8
+Two: 9
+Two: 10
+Resuming thread one
+One: 6
+Two: 11
+One: 7
+Two: 12
+One: 8
+Two: 13
+One: 9
+Two: 14
+One: 10
+Two: 15
+Suspending thread two
+One: 11
+One: 12
+One: 13
+One: 14
+One: 15
+Suspending thread two
+Two: 16
+Waiting for threads to finish
+One: 16
+Two: 17
+One: 17
+Two: 18
+One: 18
+Two: 19
+One: 19
+Two: 20
+One: 20
+Two: 21
+One: 21
+Two: 22
+One: 22
+Two: 23
+One: 23
+Two: 24
+One: 24
+Two: exiting
+One: exiting
+Main thread exiting

@@ -1,0 +1,17 @@
+public class Linkedlist {
+
+//	public static void main(String[] args) {
+//		Student s[] = {
+//				new Student(1,"Juzar",18),
+//				new Student(1,"Juzar",18),
+//				new Student(1,"Juzar",18),
+//				new Student(1,"Juzar",18),
+//				new Student(1,"Juzar",18)
+//				};
+//		Linkedlist<Student> ll = new Linkedlist<>();
+//
+//		LinkedHashSet<Student> lh = new LinkedHashSet<Student>(s);
+//		
+//	}
+
+}

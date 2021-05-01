@@ -1,0 +1,6 @@
+public class MyClass<T extends Student>{
+	T t[];
+	public MyClass(T t[]) {
+		
+	}
+}

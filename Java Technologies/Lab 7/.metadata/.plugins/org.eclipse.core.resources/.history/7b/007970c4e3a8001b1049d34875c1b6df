@@ -1,0 +1,7 @@
+public class LinkedList<T extends Student>{
+	T t[];
+	public LinkedList(T t[]) {
+		this.t = t;
+	}
+	LinkedList<Student>
+}

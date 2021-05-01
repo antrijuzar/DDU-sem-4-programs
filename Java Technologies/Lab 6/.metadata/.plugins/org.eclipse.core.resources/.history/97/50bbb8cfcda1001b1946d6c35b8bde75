@@ -1,0 +1,15 @@
+
+public class MyClass<T> implements MinMax<T> {
+	@Override
+	public T findMin() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public T findMax() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

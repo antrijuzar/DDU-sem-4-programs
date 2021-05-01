@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+public class MyClass {
+
+	public static void main(String[] args) {
+		Student s[] = {
+				new Student(1,"Juzar",18),
+				new Student(1,"Juzar",18),
+				new Student(1,"Juzar",18),
+				new Student(1,"Juzar",18),
+				new Student(1,"Juzar",18)
+				};
+		LinkedList<Student> se = new LinkedList<>();
+		for(Student s1 : s) {
+			se.add(s1);
+		}
+		
+		System.out.println(se);
+	}
+
+}

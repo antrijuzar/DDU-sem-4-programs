@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+D:\Workspace\DDU SEM 4 PROGRAMS\Java Technologies\Lab 6\.metadata\.plugins\org.eclipse.jdt.core
+2275433994.index
+1773027110.index
+4157254277.index
+678707722.index
+514396080.index

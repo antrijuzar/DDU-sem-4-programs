@@ -1,0 +1,17 @@
+import java.util.*;
+public class MyClass {
+
+	public static void main(String[] args) {
+		Student s[] = {
+				new Student(1,"Juzar",18),
+				new Student(1,"Juzar",18),
+				new Student(1,"Juzar",18),
+				new Student(1,"Juzar",18),
+				new Student(1,"Juzar",18)
+				};
+		//LinkedList<Student> ll = new LinkedList<Student>(s);
+		LinkedList<Student> se = new LinkedList<>();
+		
+	}
+
+}

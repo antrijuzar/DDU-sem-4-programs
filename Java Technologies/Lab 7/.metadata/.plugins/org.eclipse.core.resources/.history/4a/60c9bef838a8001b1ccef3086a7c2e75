@@ -1,0 +1,49 @@
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+
+class Student{
+	int rollNo;
+	String name;
+	int age;
+	public Student(int rollNo, String name, int age) {
+		super();
+		this.rollNo = rollNo;
+		this.name = name;
+		this.age = age;
+	}
+	public int getRollNo() {
+		return rollNo;
+	}
+	public void setRollNo(int rollNo) {
+		this.rollNo = rollNo;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+}
+public class Linkedlist {
+
+	public static void main(String[] args) {
+		Student s[] = {
+				new Student(1,"Juzar",18),
+				new Student(1,"Juzar",18),
+				new Student(1,"Juzar",18),
+				new Student(1,"Juzar",18),
+				new Student(1,"Juzar",18)
+				};
+		Linkedlist<Student> ll = new Linkedlist<>();
+
+		LinkedHashSet<Student> lh = new LinkedHashSet<Student>(s);
+		
+	}
+
+}
