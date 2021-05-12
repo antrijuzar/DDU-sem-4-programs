@@ -7,7 +7,7 @@ public class TestDb {
 	public static void main(String[] args) throws ClassNotFoundException {
 		Connection con;
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			//Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sem 4 jt","root","");
 			Statement stmt;
 			stmt = con.createStatement();
